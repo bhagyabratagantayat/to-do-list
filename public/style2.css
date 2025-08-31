@@ -1,0 +1,130 @@
+/* General page styling */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fbf9d1; /* lightest background */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2c2c2c;
+}
+
+/* Heading */
+h1 {
+  color: #9a3f3f; /* dark red */
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Input form */
+form {
+  margin-bottom: 15px;
+}
+
+.input {
+  padding: 10px 15px;
+  border: 2px solid #c1856d;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  width: 50vh;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #9a3f3f;
+  box-shadow: 0 0 6px rgba(154, 63, 63, 0.5);
+}
+
+/* Buttons */
+.btn-1 {
+  background-color: #9a3f3f;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  display: inline;
+}
+
+.btn-1 i {
+  font-size: 1.1rem;
+}
+
+.btn-1:hover {
+  background-color: #c1856d;
+  transform: scale(1.05);
+}
+
+.edit-dlt {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Task list */
+ol {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+}
+
+li {
+  background: #e6cfa9;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-size: 1.1rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Task text */
+li span {
+  flex: 1;
+}
+li span {
+  flex: 1; /* task text takes all available space */
+}
+/* Edit + Delete buttons inline */
+li form {
+  display: inline;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #9a3f3f;
+  color: #fbf9d1;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.95rem;
+  margin-top: auto; /* pushes footer to bottom */
+  border-top: 3px solid #c1856d;
+  
+}
+
+.footer strong {
+  color: #e6cfa9;
+}
+
+.footer strong {
+  color: #ff9800;
+}
+

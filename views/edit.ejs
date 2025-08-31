@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/edit.css">
 </head>
 
 <body>
-    <h2>Edit Task</h2>
+    <h2>Edit Task &nbsp;&nbsp;</h2>
     <form action="/home/<%= task.id %>?_method=PATCH" method="POST">
-        <input type="text" name="task" value="<%= task.task %>" required>
-        <button type="submit">Update</button>
+        <textarea name="task" rows="3" cols="40" required><%= task.task %></textarea>
+        <button type="submit"><i class="fa-solid fa-square-pen"></i></button>
     </form>
+
+<footer class="footer">
+  <p>✨ Made with ❤️ by <strong>PiluBhai</strong> | My Project 🚀</p>
+</footer>
 
 </body>
 

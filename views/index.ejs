@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style2.css">
 </head>
 
 <body>
@@ -22,20 +22,27 @@
         <!-- <li><%= tsk.task %> &nbsp;<a href="http://localhost:<%= process.env.YOUR_PORT %>/home">delete</a></li> -->
 
         <li><%= tsk.task %> &nbsp;
-            
-            <form action="/home/<%= tsk.id %>/edit" method="GET" style="display:inline;">
-                <button type="submit" class="btn-1"><i class="fa-solid fa-pen-to-square"></i></button>
-            </form>
+            <span class="edit-dlt">
+                <form action="/home/<%= tsk.id %>/edit" method="GET" style="display:inline;">
+                    <button type="submit" class="btn-1 btn-2"><i class="fa-solid fa-pen-to-square"></i></button>
+                </form>
 
-            <form action="/home/<%= tsk.id %>?_method=DELETE" method="POST" style="display:inline;">
-                <button type="submit" class="btn-1"><i class="fa-solid fa-delete-left"></i></button>
-            </form>
+                <form action="/home/<%= tsk.id %>?_method=DELETE" method="POST" style="display:inline;">
+                    <button type="submit" class="btn-1 btn-2"><i class="fa-solid fa-delete-left"></i></button>
+                </form>
+
+            </span>
+
         </li>
         <br>
         <% } %>
     </ol>
 
+    <footer class="footer">
+  <p>✨ Made with ❤️ by <strong>PiluBhai</strong> | My Project 🚀</p>
+</footer>
+
+
 </body>
 <script src="/script.js"></script>
-
 </html>

@@ -18,24 +18,53 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
+
+// default data
 let todo = [
   {
     id: uuidv4(),
-    task: "eat",
+    task: "Buy groceries (milk, bread, fruits, vegetables)",
   },
   {
     id: uuidv4(),
-    task: "drink",
+    task: "Pay electricity and internet bills",
   },
   {
     id: uuidv4(),
-    task: "bark",
+    task: "Clean the room and organize the desk",
   },
   {
     id: uuidv4(),
-    task: "sleep",
+    task: "Do laundry and fold clothes",
+  },
+  {
+    id: uuidv4(),
+    task: "Cook a healthy dinner",
+  },
+  {
+    id: uuidv4(),
+    task: "Water the plants",
+  },
+  {
+    id: uuidv4(),
+    task: "Call parents/friends to check in",
+  },
+  {
+    id: uuidv4(),
+    task: "Do a 20-minute workout or yoga session",
+  },
+  {
+    id: uuidv4(),
+    task: "Read a book or listen to a podcast before bed",
+  },
+  {
+    id: uuidv4(),
+    task: "Plan next day’s tasks and schedule",
   },
 ];
+
+
+// home route
 app.get("/home", (req, res) => {
   //   let { task } = todo;
   res.render("index.ejs", { todo: todo });
@@ -72,6 +101,7 @@ app.get("/home/:id/edit", (req, res) => {
   res.render("edit.ejs", { task });
 });
 
+// dlt task
 app.delete("/home/:id", (req, res) => {
   let { id } = req.params;
   todo = todo.filter((t) => t.id !== id); // jis task ka id match nahi kare usko rakho
