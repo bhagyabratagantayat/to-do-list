@@ -1,0 +1,21 @@
+h1{
+    background-color: aqua;
+    text-align: center;
+}
+.input{
+    height: 29px;
+    font-size: 20px;
+    cursor: pointer;
+    /* background-color: azure; */
+    border-radius: 5%;
+    border: 2px solid black;
+}
+.btn-1{
+    width: 50px;
+    height: 33px;
+    font-size: auto;
+    cursor: pointer;
+    background-color: rgb(12, 144, 225);
+    border-radius: 5%;
+    border: 2px solid black;
+}

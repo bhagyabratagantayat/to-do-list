@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to-do-list</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
     <h1>TO DO LIST</h1>
+    <form action="" method="post">
+        <input type="text" name="task" placeholder="add your task" class="input">
+        <button class="btn-1">add</button>
+    </form>
+    <ul>
+        <% for(let tsk of todo) { %>
+        <li><%= tsk.task %></li>
+       <% } %> 
+    </ul>
+
 </body>
+<script src="/script.js"></script>
+
 </html>
