@@ -10,12 +10,24 @@ h1{
     border-radius: 5%;
     border: 2px solid black;
 }
-.btn-1{
-    width: 50px;
-    height: 33px;
-    font-size: auto;
-    cursor: pointer;
-    background-color: rgb(12, 144, 225);
-    border-radius: 5%;
-    border: 2px solid black;
+.btn-1 {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  display: inline;
+}
+
+.btn-1:hover {
+  opacity: 0.8;
+}
+li a{
+    text-decoration: none;
 }
